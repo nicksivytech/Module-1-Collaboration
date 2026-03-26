@@ -1,41 +1,30 @@
-Module1_Numbers_and_Types
-.1 - Python uses different data types like integers, floats, strings, and booleans. These types help store and manage different kinds of data.
-x = 10        # integer
-y = 3.14      # float
-name = "Nick" # string
-is_student = True # boolean
-print(type(x))
-print(type(y))
-print(type(name))
-print(type(is_student))
+# Module1
 
-.2 - Integers are whole numbers, while floats contain decimal values. Python will automatically determine the type.
-a = 5
-b = 5.0
-print(type(a))
-print(type(b))
+# 3.1 How many seconds are in an hour?
+# There are 60 seconds in a minute and 60 minutes in an hour.
+seconds_in_hour = 60 * 60
+print("3.1 Answer:", seconds_in_hour)
 
-.3 - Strings are used to store text and are enclosed in quotes.\
-first = "Hello"
-last = "World"
-print(first + " " + last)
+# 3.2 Assign the result to seconds_per_hour
+seconds_per_hour = seconds_in_hour
+print("3.2 seconds_per_hour:", seconds_per_hour)
 
-.4 - Type conversion allows changing one data type to another.
-num = "10"
-converted = int(num)
-print(converted)
-print(type(converted))
+# 3.3 How many seconds are in a day?
+# There are 24 hours in a day.
+seconds_in_day = seconds_per_hour * 24
+print("3.3 Answer:", seconds_in_day)
 
-.5 - Mathematical operations can be performed using operators like +, -, *, and /.
-x = 10
-y = 3
+# 3.4 Assign seconds_per_day
+seconds_per_day = seconds_in_day
+print("3.4 seconds_per_day:", seconds_per_day)
 
-print(x + y)
-print(x - y)
-print(x * y)
-print(x / y)
+# 3.5 Floating-point division
+float_division = seconds_per_day / seconds_per_hour
+print("3.5 Floating-point result:", float_division)
 
-.6 - Variables store values and can be reused throughout the program.
-age = 18
-age = age + 1
-print(age)
+# 3.6 Integer division
+int_division = seconds_per_day // seconds_per_hour
+print("3.6 Integer division result:", int_division)
+
+# Answer check for 3.6
+print("3.6 Comparison:", "Yes, it matches except no .0")
